@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="2"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/player1view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/P1color"
+            android:text="Player 1" />
+        <TextView
+
+            android:id="@+id/player2view"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/P2color"
+            android:text="Player 2" />
+        <TextView
+
+            android:id="@+id/textview1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Start Game" />
+        <Button
+            android:id="@+id/start_button"
+            android:text="Start Button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="start_click"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/formulae">
+                <RadioGroup
+                    android:id="@+id/radio_group1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_group2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_group1"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_group3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_group2"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_group4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_group3"
+                    />
+                <RadioGroup
+                    android:id="@+id/radio_group5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/radio_group4"
+                    />
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+</LinearLayout>
